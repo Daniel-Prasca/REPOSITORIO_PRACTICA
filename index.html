@@ -11,38 +11,6 @@
     <h3>Apellido</h3>
     <h4>Telefono</h4>
     <h5>Sexo</h5>
-    <script>
-        /**
-        * @param String name
-        * @return String
-        */
-    function getParameterByName(name) {
-        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-        results = regex.exec(location.search);
-        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-    }
-    </script>
-    <table>
-        <tr>
-            <td>Nombre</td>
-            <td>Apellido</td>
-            <td>Telefono</td>
-            <td>Sexo</td>
-        </tr>
-
-        <tr>
-            <td>
-                <script>
-                    document.write(getParameterByName('nombre'))
-                </script>
-            </td>
-            <td>
-                <script>
-                    document.write(getParameterByName('apellido'))
-                </script>
-            </td>
-        </tr>
-    </table>
+    
 </body>
 </html>
