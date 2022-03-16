@@ -7,42 +7,23 @@
 </head>
 <body>
     <h1>Mi primera pagina</h1>
-    <h2>Nombre</h2>
-    <h3>Apellido</h3>
-    <h4>Telefono</h4>
-    <h5>Sexo</h5>
-    <script>
-        /**
-        * @param String name
-        * @return String
-        */
-    function getParameterByName(name) {
-        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-        results = regex.exec(location.search);
-        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-    }
-    </script>
-    <table>
-        <tr>
-            <td>Nombre</td>
-            <td>Apellido</td>
-            <td>Telefono</td>
-            <td>Sexo</td>
-        </tr>
-
-        <tr>
-            <td>
-                <script>
-                    document.write(getParameterByName('nombre'))
-                </script>
-            </td>
-            <td>
-                <script>
-                    document.write(getParameterByName('apellido'))
-                </script>
-            </td>
-        </tr>
-    </table>
+    <form action="dos.html" method="get">
+        <label for="nombres">NOMBRES</label>
+        <input type="text" name="nombres" id="nombres" />
+        <br>
+        <label for="apellidos">APELLIDOS</label>
+        <input type="text" name="apellidos" id="apellidos" />
+        <br>
+        <label for="direccion">DIRECCION</label>
+        <input type="text" name="direccion" id="direccion" />
+        <br>
+        <label for="telefono">TELEFONO</label>
+        <input type="number" name="telefono" id="telefono" />
+        <br>
+        <label for="usuario">USUARIO</label>
+        <input type="text" name="usuario" id="usuario" />
+        <br><br>
+        <input type="submit"/>
+    </form>
 </body>
 </html>
