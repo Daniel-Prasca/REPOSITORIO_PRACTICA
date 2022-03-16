@@ -13,9 +13,8 @@ td{
 
 label{
 
-   display: block;
+   display: inline-block;
    color: blue;
-
     width: 120px;
     background-color:#848484;
 
