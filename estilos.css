@@ -1,0 +1,21 @@
+*{
+  color:rgb(78, 72, 29);
+}
+table{
+    border:1px solid black;
+}
+td{
+
+    border: 1px solid #848484;
+    color: blue;
+}
+
+label{
+
+   display: block;
+   color: blue;
+
+    width: 120px;
+    background-color:#848484;
+
+}
